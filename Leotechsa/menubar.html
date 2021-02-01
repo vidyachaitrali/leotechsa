@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leotechsa Webpage</title>
+    <link rel="stylesheet" href="menubar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="file:///E:/jquery.js"></script>
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="sampledemo1.css">
+
+<link href="slidein/stylesheets/scroll.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<style>
+.carousel-indicators li {
+	
+    height: 10px;
+}
+@keyframes bounce {
+  0% {
+    tranform: translate(0, 4px);
+  }
+  50% {
+    transform: translate(0, 8px);
+  }
+} 
+
+
+</style>
+  </head>
+  <body>
+  <a id="button"></a>
+    <nav>
+	
+      <div class="logo">Leotechsa</div>
+	 
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li><a class="active" href="#top">Home</a></li>
+		
+		<li>
+          <label for="btn-1" class="show">About Us+</label>
+          <a href="#about">About Us</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="#">Foundation</a></li>
+            <li><a href="#">Vision & Mission </a></li>
+            <li><a href="#">Core Values</a></li>
+			<li><a href="#">Executive Team</a></li>
+          </ul>
+        </li>
+       
+        <li>
+          <label for="btn-2" class="show">Awards+</label>
+          <a href="#award">Awards</a>
+          <input type="checkbox" id="btn-2">
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">App Design</a></li>
+            <li>
+              <label for="btn-3" class="show">More +</label>
+              <a href="#">More <span class="fa fa-plus"></span></a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+                <li><a href="#">Submenu-1</a></li>
+                <li><a href="#">Submenu-2</a></li>
+                <li><a href="#">Submenu-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Association</a></li>
+         <li>
+          <label for="btn-3" class="show">Product +</label>
+          <a href="#product">Product & Segment</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="agriculturedemo.html">Agriculture</a></li>
+            <li><a href="transportationdemo.html">Industrial material </a></li>
+            <li><a href="defense.html">Defense & Security</a></li>
+			<li><a href="hospitality.html">Hospitality</a></li>
+          </ul>
+        </li>
+		<li><a href="#">Technology</a></li>
+		<li><a href="#contact">Contact</a></li>
+      </ul>
+	  </nav>
+	
+    
+	
+    <div>
+            <div class="scroll-indicator" id="slider" data-scroll-indicator-title="slider"></div>
+        </div>
+<section id="top">	
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="robo.jpeg" class="d-block w-100" alt="...">
+		<div class="carousel-caption">
+	  <p class=" animated fadeInUp  ">Award winner Robotic Arm<br> First Prize winners trophy</p>
+	  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="robo6.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-caption">
+	  <p class=" animated fadeInUp ">Robotic Skill Developement <br>Robotics competition named ROBOTSAV</p>
+	  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="robo3.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-caption">
+	  <p class=" animated fadeInUp ">Well experienced, talented <br>and creative team</p>
+	  </div>
+    </div>
+  </div> 
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</section>
+
+<div id="navsidebar">
+        <ul class="ns_menu">
+            
+            <li class="ns_menu_item bounceInRight animated slow loc-contact" style="animation-delay:1.75s;"><a style="cursor:pointer;" href="#location-contact"><i class="fa fa-envelope"></i><span class="ns_content">contact us</span></a></li>
+            
+            <li class="ns_menu_item bounceInRight animated slow menu-contact" style="animation-delay:1.75s;"><a style="cursor:pointer;" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope"></i><span class="ns_content">contact us</span></a></li>
+            
+            <li class="ns_menu_item bounceInRight animated slow" style="animation-delay:2.0s;"><a style="cursor:pointer;" onclick="Copy();"><i class="fa fa-files-o"></i><span class="ns_content">copy url</span><textarea class="hiddentext" id="url" rows="1" cols="30"></textarea></a>
+                <script type="application/javascript">
+                    function Copy() {
+                      var Url = document.getElementById("url");
+                      Url.innerHTML = window.location.href;
+                      console.log(Url.innerHTML)
+                      Url.select();
+                      document.execCommand("copy");
+                    }
+                </script>
+
+            
+            </li>
+            
+         
+	<li class="ns_menu_item share bounceInRight animated slow" style="animation-delay:2.25s;"><a style="cursor:pointer;"><i class="fa fa-share-alt"></i>
+<span class="ns_content">share page</span>
+
+               
+				 <div class="a2a_kit a2a_kit_size_32 a2a_default_style sharemenu">
+                <div class="icon-bar">
+                    <span class="social-icons">
+					<a class="facebook" href="https://www.facebook.com/share.php?u=http://www.phpcluster.com/add-wysiwyg-html-editor-textarea-site/&title=Add WYSIWYG HTML Editor to Textarea on Your Site" target="blank"><i class="fa fa-facebook" title="Share on Facebook" alt="Share on Facebook"></i></a>
+					
+					<a class="twitter" href="https://twitter.com/intent/tweet?status=Add WYSIWYG HTML Editor to Textarea on Your Site+http://www.phpcluster.com/add-wysiwyg-html-editor-textarea-site/" target="blank"><i class="fa fa-twitter"  title="Share on twitter" alt="Share on twitter"></i></a>
+
+					<a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.phpcluster.com/add-wysiwyg-html-editor-textarea-site/&title=Add WYSIWYG HTML Editor to Textarea on Your Site&source={{source}}" target="blank"><i class="fa fa-linkedin" title="Share on LinkedIn" alt="Share on LinkedIn" ></i></a>
+					
+                    <a class="gmail" href="https://accounts.google.com/login/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank"><i class="fa fa-envelope" title="Share on Gmail" alt="Share on Gmail" ></i></a>
+					    
+                    </span>
+                </div>
+				</div>
+				
+                <!-- AddToAny END --></a></li>
+
+        <!-- <li> -->
+		<li class="ns_menu_item lang bounceInRight animated slow" style="animation-delay:2.5s;"><a style="cursor:pointer;"><i class="fa fa-language"></i><span class="ns_content">translate</span>
+                <span class="langmenu"><div id="google_translate_element"></div></span>
+
+				<div class="custom-select" >
+  <select>
+    <option value="0">Select language</option>
+    <option value ="1">Chinese</option>
+    <option value="2">French</option>
+    <option value="3">German</option>
+  </select>
+  </div>
+  
+  
+
+
+
+
+
+	
+				<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, gaTrack: true, gaId: 'UA-10860722-1'}, 'google_translate_element');
+}
+</script><!--<script data-minify="1" type="text/javascript" src="//www.oceaneering.com/wp-content/cache/min/1/translate_a/element-00e84cbad317b562f8c769cb3bf1fd47.js" async></script> -->
+			<style>.goog-logo-link {
+						display: none;
+					}
+					.goog-te-gadget {
+						font-size: 1px;
+						color: #00263e;
+						left:50%;
+						position: relative;
+					}
+			</style>
+			
+        </span></a></li>
+    </ul>
+</div>
+
+<div>
+            <div class="scroll-indicator" id="about" data-scroll-indicator-title="slider"></div>
+        </div>
+<section id="about">
+
+<div class="container">
+<div class=" animated  animatedFadeInUp fadeInUp ">
+
+<h1><span>About Us</span></h1> <br>
+
+</div>
+<!-- <div class="menu"> -->
+  <!-- <ul >  -->
+  <!-- <li><a href="#foundation">Foundation</a></li>  -->
+  <!-- <li><a href="#vision&mission">Vision & Mission</a></li>  -->
+  <!-- <li><a href="#core">Core Values</a></li>  -->
+  <!-- <li><a href="#executive">Executive Team</a></li>  -->
+	
+<!-- </ul> -->
+
+<!-- </div> -->
+
+<div class="tab">
+
+  <button class="tablinks active" onclick="openCity(event, 'Foundation')" id="defaultOpen" >Foundation</button>
+  <button class="tablinks" onclick="openCity(event, 'Vision & Mission')">Vision & Mission</button>
+  <button class="tablinks" onclick="openCity(event, 'Core Values')">Core Values</button>
+  <button class="tablinks" onclick="openCity(event, 'Executive Team')">Executive Team</button>
+  
+</div>
+
+<div id="Foundation" class="tabcontent" >
+  <!-- <h3>Foundation</h3> --><br><br>
+  <p style="margin-right:30px;">We started in the year 2018 to innovate new areas in the field of robotics and social innovation. With the strong belief that success is the first goal, we have started working on autonomous robotics and social innovation projects. Now, at this stage we have a team of multi skilled engineers having core competency in machine vision; mobile robotics, mechatronics and embedded system design and development.</p>
+
+<p>At Leotechsa, we emphasis on the concept of ideation and conceptualization. We follow the engineering processes and discipline. Our core competency is social innovation and we mainly focus in the complete ecosystem to enrich this goal. We also run skill development program to empower the society with unique experience and learning.</p>
+</div>
+
+<div id="Vision & Mission" class="tabcontent">
+  <!-- <h3>Vision & Mission</h3> --><br><br>
+  <p><strong>Our Vision</strong></p>
+<p style="margin-right:30px;">To be a leader in social innovation, providing quality services in robotics and relevant areas of research. Collaboration with leading industries and universities to ensure a continuous learning and innovation, and to achieve excellence in basic-to-advanced skill development training program in the area of robotics.</p>
+<p>&nbsp;</p>
+<p><strong>Our Mission</strong></p>
+<p>Our engineers are committed and passionate for continuous research and development in the field of social innovation and robotics. This results into successful designing and developing robust, cost effective robotics technology and solutions for the defense industry, academia, private sector&nbsp;and governments all around the world.</p>
+<p>We strongly emphasis on continuous skill improvement for our employees and promote the concept of innovative ideation and conceptualization.</p> 
+</div>
+
+<div id="Core Values" class="tabcontent">
+  <!-- <h3>Core Values</h3> --><br><br>
+  <p style="margin-right:30px;">Bridging technology to the nature! Beyond the product or project based company,&nbsp;we work on new notions! We combine the elements of fundamental study of physics, mathematics, technology and even psychology to create a whole new art experience for our client and customer. Our ambition is to work on a new line of ideas that focus on aspects such as playfulness, human values and towards nature which we call as social innovation, we also believe in the extended innovation and so we believe in the collaboration, we motivate our team to work with passion.</p>
+</div>
+
+<div id="Executive Team" class="tabcontent">
+  <!-- <h3>Executive Team</h3> --><br><br>
+  <p><img class="wp-image-832 alignleft" src="ak2.jpg" alt="" width="170" height="193" /></p>
+  <p style="margin-left:200px; margin-top:-20px;margin-right:100px">S.V. Deshmukh, the <b>Founder &amp; COO </b>of Leotechsa. He comes with a rich experience of over 30 years in the field of Personnel &amp; Legal in Automotive and Transportation Industry, who during his professional career pursued MSW, LLB from Bombay University. Being addicted to large scale of information with huge contacts, he produces an engaging content. He is goal focused, fully dedicated towards his profession &amp; leads Leotechsa right from the inception to operations. He enjoys Yoga, reading &amp; swimming in his leisure time.</p>
+<!-- <p>&nbsp;</p> -->
+<br><br> 
+<p style="margin-top:10px;"> <img class=" wp-image-833 alignleft" src="ab2.jpg" alt="" width="174" height="194"  /></p>
+<br><br><br><br>
+<p style="margin-left:220px; margin-top:-80px;margin-right:100px">Shilpa, the <b>Co-founder &amp; CFO </b>of Leotechsa, plays a key role in the company. She comes from a Commerce background &amp; pursued her Masters in Business Administration. Being a gold medalist in Commerce, Shilpa provides accounting &amp; finance support to Leotechsa. She enjoys driving &amp; socializing in her free time.</p>
+<!-- <p>&nbsp;</p> -->
+<br><br>
+<p style="margin-top:50px;"><img class="wp-image-834 alignleft" src="ap2.jpg" alt="" width="174" height="194"  /></p>
+<p>&nbsp;</p><br><br>
+<p  style="margin-left:200px; margin-top:-80px;margin-right:100px">Vikram, the <b>Technical Director </b>of Leotechsa, he has extensive experience in Embedded System of over past 13 years, working in Automation and Industrial domains across different continents like America and Asia, Vikram has contributed to lay the foundation of this technically-driven company, he is multi-skilled and is an innovative leader. He comes from Computer Engineering background and also pursued his M.S from <b>BITS</b> Pilani. He kick-started his career in a small scale organization and later worked with product and project based public limited companies in India. Being an ardent reader, he loves trekking &amp; yoga in his leisure time.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+
+</div>
+
+</section>
+
+
+<section class="counters">
+<div class="container">
+
+<div>
+<i class="fa fa-briefcase fa-4x"></i>
+<div class="counter animated fadeInUp" data-target="1000">0</div>
+<h5 class="wow fadeInUp animated">Projects completed</h5>
+</div>
+<div>
+<i class="fa fa-users fa-4x"></i>
+<div class="counter animated fadeInUp" data-target="3000">0</div>
+<h5 class="wow fadeInUp animated">Users connected</h5>
+</div>
+<div>
+<i class="fa fa-trophy fa-4x"></i>
+<div class="counter animated fadeInUp" data-target="1000">0</div>
+<h5 class="wow fadeInUp animated">Golden achievments</h5>
+</div>
+<div>
+<i class="fa fa-users fa-4x"></i>
+<div class="counter animated fadeInUp" data-target="1000">0</div>
+<h5 class="wow fadeInUp animated">Users connected</h5>
+</div>
+</div>
+
+</section>
+<script src="script.js"></script>
+
+<div>
+            <div class="scroll-indicator" id="award" data-scroll-indicator-title="slider"></div>
+        </div>
+<section id="award">
+<div id="award">
+<h1><span>Awards</span></h1> <br>
+<h4 style="margin-top:50px">Award winner Robotic Arm</h4>
+
+<p style="margin-top:40px"><img class=" wp-image-994 alignright" src="award.png" alt="" width="300" height="201" sizes="(max-width: 300px) 100vw, 300px"/>We have been awarded First Prize winners trophy named &#8216;CNC RATNA&#8217; for prototype of Robotic Arm designed by us in National level Robotics competition named ROBOTSAV in Pune. This Robotic Arm is modular and flexible in design, this is completely programmable and controllable through PC.</p>
+</div>
+</section>
+<div>
+            <div class="scroll-indicator" id="product" data-scroll-indicator-title="slider"></div>
+        </div>
+<section id="product">
+<h1 style="margin-top:-200px; margin-left:350px"><span>Segment</span></h1> <br><br><br>
+<div class="wrapper">
+<div class="card">
+<img src="agri.jpg">
+<!-- </div> -->
+<div class="info">
+<h1>Agriculture</h1>
+<p>Food security is a global concern, governments worldwide are facing unprecedent-ed rise in demand for food </p>
+<a href="agriculturedemo.html" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card" style="margin-left:380px; margin-top:-340px">
+<img src="material.jpg" >
+<!-- </div> -->
+<div class="info">
+<h1 style="font-size:34px">Material Transportation</h1>
+<p>This technology began the trend of automation of material transportation.</p>
+<a href="transportationdemo.html" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card" style="margin-left:660px; margin-top:-340px">
+<img src="defense.jpg">
+<!-- </div> -->
+<div class="info">
+<h1>Defense & Security</h1>
+<p>Defense robots are professional service robots that are deployed by the military in combat scenarios.</p>
+<a href="defense.html" class="btn">Read More</a>
+
+</div>
+</div>
+
+<div class="card" style="margin-left:940px; margin-top:-340px">
+<img src="hospital.png">
+<!-- </div> -->
+<div class="info">
+<h1>Hospitality</h1>
+<p>The use of robots within the hospitality industry is becoming more commonplace, with uses ranging from artificially intelligent chatbots, experience in a hotel.</p>
+<a href="hospitality.html" class="btn">Read More</a>
+
+</div>
+</div>
+</div>
+
+</section>
+<br><br>
+<div>
+            <div class="scroll-indicator" id="contact" data-scroll-indicator-title="slider"></div>
+        </div>
+<section id="contact">
+
+<div class="wrapper">
+<!-- <h1><span>Contact Us</span></h1> -->
+    <form class="form"><br>
+      <div class="pageTitle title"><center>Get in Touch </center></div>
+      <!-- <div class="secondaryTitle title">Please fill this form to sign up.</div> -->
+      <input type="text" class="name formEntry" placeholder="Name"/><br>
+	  <input type="text" class="email formEntry" placeholder="Email"/><br>
+      <textarea class="message formEntry" placeholder="Message"></textarea><br>
+      <!-- <input type="checkbox" class="termsConditions" value="Term"> -->
+      <!-- <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label><br> -->
+      <button class="submit formEntry" onclick="thanks()">Submit</button>
+    </form>
+  </div>
+  </section>
+  <script src="app.js"></script>
+	<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+<section class="footer">
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+          <img src="logo.jpg">
+				<h3>About<span> Leotechsa </span></h3>
+
+				<p class="footer-links">
+					<a href="#top" class= "wow fadeInUp animated">Home</a>
+					|
+					<a href="#product" class= "wow fadeInUp animated">Product</a>
+					|
+					<a href="#about" class= "wow fadeInUp animated">About</a>
+					|
+					<a href="#team" class= "wow fadeInUp animated">Our Team</a>
+					|
+					<a href="#contact" class= "wow fadeInUp animated">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© 2019 Leotechsa Learning Solutions Pvt. Ltd.</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p class= "wow fadeInUp animated">309 - Rupa Solitaire,<br>
+						 Bldg. No. A1,<br>
+						Sector 1 Mahape,<br> Navi Mumbai - 400710</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone" ></i>
+					<p class= "wow fadeInUp animated">+91 22-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope" class= "wow fadeInUp animated"></i>
+					<p class= "wow fadeInUp animated"><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about wow fadeInUp animated">
+					<span >About the company</span>
+					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook" ></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+			
+		</footer>
+		</section>
+		
+		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" width="70px" height="70px" size ="7x"></i></button>  -->
+		
+		<!-- <script> -->
+<!-- //Get the button -->
+<!-- var mybutton = document.getElementById("myBtn"); -->
+
+<!-- // When the user scrolls down 20px from the top of the document, show the button -->
+<!-- window.onscroll = function() {scrollFunction()}; -->
+
+<!-- function scrollFunction() { -->
+  <!-- if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { -->
+    <!-- mybutton.style.display = "block"; -->
+  <!-- } else { -->
+    <!-- mybutton.style.display = "none"; -->
+  <!-- } -->
+<!-- } -->
+
+<!-- // When the user clicks on the button, scroll to the top of the document -->
+<!-- function topFunction() { -->
+  <!-- document.body.scrollTop = 0; -->
+  <!-- document.documentElement.scrollTop = 0; -->
+<!-- } -->
+<!-- </script> -->
+
+    <script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+
+<script>
+function dotsThrottle(a,b,c){var d,e,f,g=null,h=0;c||(c={});var i=function(){h=!1===c.leading?0:Date.now(),g=null,f=a.apply(d,e),g||(d=e=null)};return function(){var j=Date.now();h||!1!==c.leading||(h=j);var k=b-(j-h);return d=this,e=arguments,0>=k||k>b?(g&&(clearTimeout(g),g=null),h=j,f=a.apply(d,e),!g&&(d=e=null)):!g&&!1!==c.trailing&&(g=setTimeout(i,k)),f}}let dotFixedNavPresent=!1,dotFixedNavId="",dotFixedNavUp=!1;function easyScrollDots(a){let b=document.querySelectorAll(".scroll-indicator");if(!0===a.fixedNav?dotFixedNavPresent=!0:dotFixedNavPresent,dotFixedNavId=""!==a.fixedNavId&&a.fixedNavId,!0===a.fixedNavUpward?dotFixedNavUp=!0:dotFixedNavUp,b.length){document.querySelector("body").lastElementChild.insertAdjacentHTML("afterend","<div class=\"scroll-indicator-controller\"><span></span></div>");const a=document.querySelector(".scroll-indicator-controller");("undefined"!=typeof window.orientation||-1!==navigator.userAgent.indexOf("IEMobile"))&&a.classList.add("indi-mobile");const d=Array.prototype.slice.call(b);d.forEach(function(b,c){const d=b.getAttribute("id"),e=b.getAttribute("data-scroll-indicator-title");let f="";0==c&&(f="active"),a.lastElementChild.insertAdjacentHTML("afterend","<div class=\""+f+"\" data-indi-controller-id=\""+d+"\" onclick=\"scrollIndiClicked('"+d+"');\"><span>"+e+"</span><div></div></div>")});const f=a.querySelectorAll("[data-indi-controller-id]");var c=dotsThrottle(function(){let b={};d.forEach(function(a){const c=a.getAttribute("id"),d=a.getBoundingClientRect().top;b[c]=d});const c=Object.keys(b).map(function(a){return b[a]}),g=function(){const a=c.filter(function(a){return-150<a});return Math.min.apply(null,a)};Object.keys(b).forEach(function(c){b[c]==g()&&(Array.prototype.forEach.call(f,function(a){a.classList.contains("active")&&a.classList.remove("active")}),a.querySelector("[data-indi-controller-id=\""+c+"\"]").classList.add("active"))})},300);window.onscroll=function(){c()}}}function scrollIndiClicked(a){if(window.jQuery){if(!0==dotFixedNavPresent&&dotFixedNavId.length){const b=document.getElementById(dotFixedNavId),c=b.clientHeight,d=$("html, body"),e=$("#"+a);if(!0===dotFixedNavUp){d.animate({scrollTop:e.offset().top},700);const a=document.body.getBoundingClientRect().top;setTimeout(function(){document.body.getBoundingClientRect().top>a&&d.animate({scrollTop:e.offset().top-c},400)},400)}else d.animate({scrollTop:e.offset().top-c},700)}else $("html, body").animate({scrollTop:$("#"+a).offset().top},700);}else if(!0==dotFixedNavPresent&&dotFixedNavId.length){const b=document.getElementById(dotFixedNavId),c=b.clientHeight,d=document.getElementById(a);if(!0===dotFixedNavUp){window.scrollTo({top:d.offsetTop,left:0,behavior:"smooth"});const a=document.body.getBoundingClientRect().top;setTimeout(function(){document.body.getBoundingClientRect().top>a&&window.scrollTo({top:d.offsetTop-c,left:0,behavior:"smooth"})},400)}else window.scrollTo({top:d.offsetTop-c,left:0,behavior:"smooth"})}else window.scrollTo({top:document.getElementById(a).offsetTop,left:0,behavior:"smooth"})}
+<!--Easy Scroll Dots init-->
+</script>
+<script>
+easyScrollDots({
+  'fixedNav': false,
+  'fixedNavId': '',
+  'fixedNavUpward': false
+});
+</script>
+<script>
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<!-- <script> -->
+<!-- $(document).ready(function(){ -->
+  <!-- $(window).on('scroll',function(){ -->
+  <!-- var a = $(window).scrollTop(); -->
+  <!-- //alert(a); -->
+  <!-- if( a > 50) { -->
+    <!-- $("p").css("textDecoration", "underline"); -->
+    <!-- } -->
+    <!-- else { -->
+       <!-- $("p").css("textDecoration", "none"); -->
+    <!-- } -->
+    
+  <!-- }); -->
+<!-- }); -->
+<!-- </script> -->
+<script>
+  /**
+ * inViewport jQuery plugin by Roko C.B. stackoverflow.com/questions/24768795/
+ *
+ * Returns a callback function with an argument holding
+ * the current amount of px an element is visible in viewport
+ * (The min returned value is 0 (element outside of viewport)
+ * The max returned value is the element height + borders)
+ */
+;(function($, win) {
+  $.fn.inViewport = function(cb) {
+     return this.each(function(i,el) {
+       function visPx(){
+         var elH = $(el).outerHeight(),
+             H = $(win).height(),
+             r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+         return cb.call(el, Math.max(0, t>0? Math.min(elH, H-t) : (b<H?b:H)));  
+       }
+       visPx();
+       $(win).on("resize scroll", visPx);
+     });
+  };
+}(jQuery, window));
+
+
+
+// Rock'n Roll!
+$("h1 span").inViewport(function(px){
+    $(this).toggleClass("animateLine", !!px);
+});
+</script>
+  </body>
+</html>

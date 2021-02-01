@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adding video</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="parallax.min.js"></script>
+<link rel="stylesheet" href="animate.css">
+<link href="slidein/stylesheets/scroll.css" rel="stylesheet">
+<style>
+.hero{
+height:90vh;
+width:101%;
+background-image:url('defense1.jpg');
+background-position:center;
+background-size:cover;
+position:relative;
+margin-top:-10px;
+<!-- margin-left:-10px; -->
+display:table;
+background-attachment:fixed; 
+ 
+}
+.hero1{
+height:60vh;
+width:40%;
+<!-- background-image:url('agriculture1.jpg'); -->
+background-position:center;
+background-size:cover;
+position:relative;
+border:solid 1px;
+}
+.content{
+	color:#fff;
+	position:absolute;
+	right:100px;
+	top:50%;
+	transform:translateY(-50%);
+}
+<!-- .content h1{ -->
+<!-- font-size:100px; -->
+
+<!-- } -->
+<!-- .content p{ -->
+<!-- margin:10px 0 40px;	 -->
+<!-- font-size:24px; -->
+<!-- } -->
+.btn{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:170px;
+	padding:10px 0;
+	background:#fff;
+	color:#000;
+	border-radius:3px;
+	cursor:pointer;
+	margin-top:240px;
+	margin-left:130px;
+	border:solid 1px;
+	background-color:#ddd;
+}
+.btn:hover{
+background-color:#D35400;
+}
+.btn img{
+	width:30px;
+	margin-right:15px;
+}
+#backVideo{
+	position:absolute;
+	<!-- top:40px; -->
+	/* right:160px; */
+	<!-- bottom:30px; -->
+	 <!-- display:none; -->
+	text-align:center;
+	<!-- left:250px; -->
+	
+}
+@media (min-aspect-ratio:16/9){
+	#backVideo{
+		width:100%;
+		height:auto;
+		text-align:center;
+}
+}
+@media (max-aspect-ratio:16/9){
+	#backVideo{
+		width:auto;
+		height:100%;
+		
+}
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-top:-365px;
+  margin-left:580px;   
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+   display: none;
+  padding: 6px 12px;
+  <!-- border: 1px solid #ccc; -->
+  border-top: none;
+    <!-- margin-top:-450px;   -->
+   margin-left:-580px;
+   <!-- margin-right:30px; -->
+}
+table, tr,th, td {
+  <!-- color:black; -->
+  border: 1px solid black;
+  margin-left:580px;
+}
+<!-- .img{ -->
+<!-- margin-right:300px; -->
+<!-- } -->
+
+.btn1 {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  margin-top:180px;
+  margin-left:230px;
+}
+
+.btn1:hover {
+  background-color: #D35400;
+  color: white;
+}
+
+.btn2 {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  margin-left:103px;
+  margin-top:100px;
+}
+
+.btn2:hover {
+  background-color: #D35400;
+  color: white;
+}
+
+.btn3 {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  margin-left:102px;
+  margin-top:100px;
+  
+}
+
+.btn3:hover {
+  background-color: #D35400;
+  color: white;
+}
+
+.btn4 {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left:100px;
+}
+
+/* Darker background on mouse-over */
+.btn4:hover {
+  background-color: #D35400;
+  color:white;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+.icon img{
+width:5%;
+opacity:0.5;
+
+}
+<!-- .section{ -->
+  <!-- text-align:center; -->
+  <!-- padding:50px 80px; -->
+<!-- } -->
+
+<!-- .section-light{ -->
+  <!-- background-color:#f4f4f4; -->
+  <!-- color:#666; -->
+<!-- } -->
+
+
+
+</style>
+</head>
+<body>
+<div class="icon">
+<a href="menubar.html"><img src="back.jpeg"></a>
+</div>
+<div class="text">
+<p class= "animated  animatedFadeInUp fadeInUp" style="font-size:18px;" >In the world of Defence and Security, leading the innovation means contributing to a safer tomorrow. We achieve this by creating ecosystems where clients, partners and governments join to protect and drive the future.
+
+A future full of challenges, threats and opportunities, where being proactive is as important as knowing how to react.
+
+To do so, we integrate the solidity of the physical world with the innovation of the digital world.
+
+Because here at Indra we believe that the only way to anticipate the future is to live it.</p> 
+
+<p class= "animated  animatedFadeInUp fadeInUp" style="font-size:18px;" >In the world of Defence and Security, leading the innovation means contributing to a safer tomorrow. We achieve this by creating ecosystems where clients, partners and governments join to protect and drive the future.
+
+A future full of challenges, threats and opportunities, where being proactive is as important as knowing how to react.
+
+To do so, we integrate the solidity of the physical world with the innovation of the digital world.
+
+Because here at Indra we believe that the only way to anticipate the future is to live it.</p> 
+
+
+</div>
+<div class="hero">
+</div>
+<br>
+<br>
+<!-- <section class="section section-light"> -->
+<div class="hero1">
+<video autoplay loop muted plays-inline id="backVideo">
+<source src="defense.mp4" type="video/mp4">
+</video>
+<div class="content">
+<!-- <h1><center>Agriculture</h1></center> -->
+<!-- <p>Food security is a global concern, governments worldwide are facing unprecedent-ed rise in demand for food</p> -->
+<div class="btn" id="playBtn">
+<img src="play.png" id="icon">Watch Video
+</div>
+</div>
+</div>
+
+<div class="tab">
+  <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Features')">Features</button>
+  <button class="tablinks" onclick="openCity(event, 'Technical Specification')">Technical Specification</button>
+  <button class="tablinks" onclick="openCity(event, 'Package')">Package</button>
+  <button class="tablinks" onclick="openCity(event, 'Include Accessories')">Include Accessories</button>
+</div>
+
+<div id="Features" class="tabcontent">
+  <h3 style="margin-left:580px;">Features:</h3>
+  <p style="margin-left:580px;">(1) <b>Cost reduction by:</b>
+(i) Decreasing Inventory level<br>
+(ii) Utilizing space to better advantage<br>
+(iii) Increasing productivity.<br><br>
+(2) <b>Waste Reduction by:</b>
+(i) Eliminating damage to material during handling<br>
+
+(ii) Being flexible to meet specific handling requirements of different nature.<br>
+
+(iii) Making proper control over stock during in and out handling.<br><br>
+(3) <b>Improve Working Conditions by:</b>
+
+(i) Increasing productivity per man-hour<br>
+
+(ii) Increase in machine efficiency through reduction of machine down time<br>
+
+(iii) Smoothing out workflow<br>
+
+(iv) Improving production control.<br><br>
+(4) <b>Improve Distribution by:</b>
+ 
+(i) Decreasing damage to products during handling and shipping.<br>
+
+(ii) Improving location of storage facilities.<br>
+
+(iii) Increasing the efficiency of shipping and receiving.
+</div>
+
+<div id="Technical Specification" class="tabcontent">
+  <h3 style="margin-left:580px; margin-top:50px;">Technical Specification:</h3>
+  <!-- <p style="margin-left:610px;">Paris is the capital of France.</p>  -->
+  
+  <table>
+  <tr>
+    <th>Technical Specification</th>
+    <th>Tractor A</th>
+	<th>Tractor B</th>
+  </tr>
+  <tr>
+    <td>Engine Type</td>
+    <td>1000.6 WT</td>
+	<td>1000.4 WT</td>
+  </tr>
+  <tr>
+    <td>Engine Power,k W/HP</td>
+    <td>85/115</td>
+	<td>70/95</td>
+  </tr>
+  <tr>
+    <td>Speed regulator</td>
+    <td>Electronic</td>
+	<td>Electronic</td>
+  </tr>
+  <tr>
+    <td>Wheel drive</td>
+    <td>4WD</td>
+	<td>4WD</td>
+  </tr>
+  <tr>
+    <td>Gearbox type</td>
+    <td>Full synchronized</td>
+	<td>Full synchronized</td>
+  </tr>
+</table>
+
+</div>
+
+<div id="Package" class="tabcontent">
+  <h3 style="margin-left:580px; margin-top:50px;">Package</h3>
+  <p style="margin-left:580px;"> Transport packaging is used to secure the transport of goods and protect them against damage. Transport packaging is made of different materials, such as films, bubble wrap, boxes, pallets or moulded parts and straps and it is often accompanied by packing materials. The top priority is always to protect your goods.</p>
+  <p style="margin-left:580px;">Transport packaging is used to secure the transport of goods and protect them against damage. Transport packaging is made of different materials, such as films, bubble wrap, boxes, pallets or moulded parts and straps and it is often accompanied by packing materials. The top priority is always to protect your goods.</p>
+</div>
+
+<div id="Include Accessories" class="tabcontent">
+  <h3 style="margin-left:580px;">Include Accessories</h3>
+  <!-- <img src="agri1.jpg"> -->
+<p style="margin-left:580px;">Brush Cutter Spare Parts offered come in precision construction finish and can be made available in different configuration choices so as to match up with the specific application demands of the customers. Further, these come developed as per defined industry standards so as to ensure excellent quality and performance support. Some of its features include superior corrosion resistance; provide for cost effective working support; precision designs to provide for exact fit to brush cutters and others.</p>
+<h3 style="margin-left:580px"><b>Agricultural Spare parts</b></h3>
+<p style="margin-left:580px">We are one of the most efficient and reliable companies which with its past several years of supreme quality services have made a very renowned name and fame in the industry for the manufacture and supply of various supreme quality agriculture accessories in the market. Our product range also includes one of the most supreme quality Spare parts. These Spare Parts are made up of very tough and tensile quality materials and are very long lasting and efficient. Spare Parts is available in various patterns that are used for various different applications. We are offering these ultimate Spare Parts to our clients at a very budget friendly range of prices.</p>
+</div>
+<!-- </section> -->
+<button class="btn1">GET A QUOTE</button>
+<button class="btn2">QUERY</button>
+<button class="btn3">GET BROCHURE</button>
+
+
+
+
+<button class="btn4"><i class="fa fa-download"></i> DOWNLOAD</button>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+<script>
+var backVideo=document.getElementById('backVideo');
+var playBtn=document.getElementById('playBtn');
+var icon=document.getElementById('icon');
+
+playBtn.onclick = function(){
+backVideo.style.display = "block";
+if(backVideo.paused){
+backVideo.play();
+icon.src = "pause.png";
+}
+else{
+backVideo.pause();
+icon.src = "play.png";
+}
+}
+</script>
+
+</body>
+</html>
